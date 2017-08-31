@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+   "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+   "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="baseLayout" template="/PL/tBaseLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/PL/tHeader.jsp" />
+		<put-attribute name="menu" value="/PL/tMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/PL/tFooter.jsp" />
+	</definition>
+	<definition name="/management.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Teams Management" />
+		<put-attribute name="body" value="/management.jsp" />
+	</definition>
+	<definition name="/group.tiles" extends="baseLayout">
+		<put-attribute name="title" value="Group Information" />
+		<put-attribute name="body" value="/group.jsp" />
+	</definition>
+</tiles-definitions>
